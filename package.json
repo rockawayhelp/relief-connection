@@ -1,0 +1,20 @@
+{
+  "name": "haves-and-needs",
+  "version": "0.0.0",
+  "description": "A tool for organizating relief and resources in the event of an emergency.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stevekinney/haves-and-needs"
+  },
+  "keywords": [
+    "sms",
+    "disaster",
+    "recovery"
+  ],
+  "author": "Steve Kinney",
+  "license": "MIT"
+}
