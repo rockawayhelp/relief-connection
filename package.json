@@ -4,7 +4,7 @@
   "description": "A tool for organizating relief and resources in the event of an emergency.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
   "keywords": [
     "sms",
     "disaster",
-    "recovery"
+    "recovery",
+    "hackforchange"
   ],
   "author": "Steve Kinney",
   "license": "MIT"
