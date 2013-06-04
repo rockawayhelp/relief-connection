@@ -17,5 +17,13 @@
     "hackforchange"
   ],
   "author": "Steve Kinney",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nano": "~3.3.8",
+    "twilio": "~1.1.2",
+    "geocoder": "~0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  }
 }
