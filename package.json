@@ -1,5 +1,5 @@
 {
-  "name": "haves-and-needs",
+  "name": "disaster connect",
   "version": "0.0.0",
   "description": "A tool for organizating relief and resources in the event of an emergency.",
   "main": "app.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/stevekinney/haves-and-needs"
+    "url": "http://github.com/rockawayhelp/disaster-connect"
   },
   "keywords": [
     "sms",
@@ -25,5 +25,9 @@
   },
   "devDependencies": {
     "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm":  "1.2.x"
   }
 }
