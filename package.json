@@ -19,7 +19,9 @@
   "author": "Steve Kinney",
   "license": "MIT",
   "dependencies": {
+    "express": "3.0.6",
     "nano": "~3.3.8",
+    "hjs": "*", 
     "twilio": "~1.1.2",
     "geocoder": "~0.1.0"
   },

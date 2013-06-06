@@ -1,22 +1,28 @@
-var http = require('http')
-  , qs = require('querystring')
-  , util = require('util')
-  , twilio = require('twilio');
+var express = require('express')
+  , http = require('http')
+  , path = require('path')
+  , routes = require('./lib/routes');
 
-var server = http.createServer(function (request, response) {
- var body = "";
-  request.on('data', function (chunk) {
-    body += chunk;
-  });
-  
-  request.on('end', function () {
-    console.log('Posted: ' + util.inspect(qs.parse(body)));
-    response.writeHead(200);
-    response.end("Hello world");
-  });
+var app = express();
+
+app.configure(function(){
+  app.set('port', process.env.PORT || 3000);
+  app.set('views', __dirname + '/views');
+  app.set('view engine', 'hjs');
+  app.use(express.favicon());
+  app.use(express.logger('dev'));
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(app.router);
+  app.use(express.static(path.join(__dirname, 'public')));
 });
 
-var port = process.env.PORT || 3000;
+app.configure('development', function(){
+  app.use(express.errorHandler());
+});
 
-server.listen(port);
-console.log("St. Louis is Listening on Port " + port + ".");
+app = router(app);
+
+http.createServer(app).listen(app.get('port'), function(){
+  console.log("Server listening on port " + app.get('port'));
+});
