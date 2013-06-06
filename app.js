@@ -1,8 +1,8 @@
-var http = require('http'),
-    geocoder = require('geocoder');
+var http = require('http')
+  , twilio = require('twilio');
 
 var server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "application/json"});
+  console.log(request);
   response.end("Hello world.");
 });
 
