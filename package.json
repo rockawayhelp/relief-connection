@@ -1,5 +1,5 @@
 {
-  "name": "disaster connect",
+  "name": "disaster-connect",
   "version": "0.0.0",
   "description": "A tool for organizating relief and resources in the event of an emergency.",
   "main": "app.js",
