@@ -9,7 +9,7 @@ var server = http.createServer(function (request, response) {
   });
   
   request.on('end', function () {
-    console.log('Posted: ' + qs(body));
+    console.log('Posted: ' + qs.parse(body));
     response.writeHead(200);
     response.end("Hello world");
   });
