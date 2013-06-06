@@ -1,4 +1,5 @@
 var http = require('http')
+  , qs = require('querystring')
   , twilio = require('twilio');
 
 var server = http.createServer(function (request, response) {
@@ -8,7 +9,7 @@ var server = http.createServer(function (request, response) {
   });
   
   request.on('end', function () {
-    console.log('Posted: ' + body);
+    console.log('Posted: ' + qs(body));
     response.writeHead(200);
     response.end("Hello world");
   });
